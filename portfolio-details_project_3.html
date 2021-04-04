@@ -48,7 +48,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/IMG-6211_profile_photo.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/IMG-6211_profile_photo_square.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Jenn Williamson</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/jenniferlwilliamson/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -67,10 +67,9 @@
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#skills"><i class="bx bx-pencil"></i> <span>Skills</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
+          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
           <li><a href="index.html#blog"><i class="bx bx-comment-detail"></i> Blog</a></li>
           <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
         </ul>
       </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -81,27 +80,62 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>Project 3: Analyzing Political Subreddits</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li>Project 3: Analyzing Political Subreddits</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="assets/img/Porfolio-details-3/3word_ngram_dem.png" class="img-fluid" alt="">
+            <img src="assets/img/Porfolio-details-3/3word_ngram_rep.png" class="img-fluid" alt="">
+            <img src="assets/img/Porfolio-details-3/1word_unique_dem_1000.png" class="img-fluid" alt="">
+            <img src="assets/img/Porfolio-details-3/1word_unique_rep_1000.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project Information</h3>
+            <ul>
+              <li><strong>Category</strong>: GA Project</li>
+              <li><strong>Project date</strong>: October 2020</li>
+              <li><strong>Blog</strong>: <a href="https://jenniferlwilliamson.medium.com/analyzing-political-subreddits-f54dd10df8bf">Analyzing Political Subreddits</a></li>
+              <li><strong>Presentation</strong>: <a href="https://github.com/jenniferlwilliamson/Project_3-Subreddit_Analysis/blob/main/Project_3_presentation.pdf">PDF</a></li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/jenniferlwilliamson/Project_3-Subreddit_Analysis">Analyzing Political Subreddits</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h2>Project Description</h2>
+          <!--
+          <p>
+            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+          </p>
+          -->
+          <ul>
+            <li>Analyzed dataset that included  214,019 submissions from the r/Republican and r/democrats subreddits</li>
+            <li>Determined words unique to each subreddit out of the top 1000 and 5000 words appearing in each </li>
+            <li>Created a logistic regression model that predicted the subreddit with 79% accuracy</li>
+          </ul>
+        </div>
+
       </div>
-    </section>
+    </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
